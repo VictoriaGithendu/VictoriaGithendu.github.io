@@ -10,51 +10,50 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
-      body {
-        --primary-color: #e7c9b9; /* soft nude blush */
-        --accent-color: #f5e4dd;  /* light beige */
-        --text-color: #3a3a3a;
-        --button-color: #d9a5a1;
+      /* Fix hero layout */
+      .banner.style1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3em 2em;
       }
-      h1 span {
-        display: block;
-        color: var(--primary-color);
+      .banner.style1 .content {
+        flex: 1;
+        padding-right: 2em;
+      }
+      .banner.style1 .image {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+      }
+      .banner.style1 .image img {
+        object-fit: contain;
+        object-position: center;
+        max-height: 70vh;
+        width: auto;
+        height: auto;
+      }
+      h1 {
+        color: #e7c9b9;
+        font-size: 3rem;
+        margin: 0;
+      }
+      .subtitle {
+        font-size: 2rem;
+        color: #3a3a3a;
+        margin-top: 0.5rem;
+        font-weight: 400;
       }
       .button {
-        background-color: var(--button-color);
+        background-color: #d9a5a1;
         color: white;
       }
       .icon-circle img {
         width: 32px;
         height: 32px;
       }
-      /* Prevent banner from cropping cover image */
-    .banner.style1 {
-      display: flex !important;
-      align-items: center !important;
-      justify-content: space-between !important;
-    }
-  .banner.style1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.banner.style1 .content {
-  flex: 1;
-}
-
-.banner.style1 .image {
-  flex: 0 0 auto;
-  overflow: visible;
-}
-
-.banner.style1 .image img {
-  object-fit: contain !important;
-  max-height: 70vh !important;  /* adjust between 60–80vh as needed */
-  width: auto !important;
-  height: auto !important;
-}
     </style>
   </head>
   <body class="is-preload">
@@ -63,26 +62,26 @@
       <!-- Hero -->
       <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="home">
         <div class="content">
-          <h1><span>VICTORIA GITHENDU</h1>
-          <h2 class="Subtitle"><Data Analyst/h2>
+          <h1>VICTORIA GITHENDU</h1>
+          <h2 class="subtitle">Data Analyst</h2>
           <p class="major">I help organizations transform raw data into meaningful insights for smarter decisions.</p>
           <p class="major">Blending technical skill with storytelling and a soft touch, I turn complex datasets into actionable insights that drive impact.</p>
           <ul class="icons">
             <li>
               <a href="mailto:ngendogithendu@gmail.com" class="icon-circle">
-                <img src="Images/mail.png" alt="Email icon" />
+                <img src="images/mail.png" alt="Email icon" />
               </a>
               <span class="major">Email</span>
             </li>
             <li>
               <a href="https://github.com/VictoriaGithendu" target="_blank" class="icon-circle">
-                <img src="Images/github.png" alt="GitHub icon" />
+                <img src="images/github.png" alt="GitHub icon" />
               </a>
               <span class="major">GitHub</span>
             </li>
             <li>
               <a href="https://linkedin.com/in/victoria-githendu" target="_blank" class="icon-circle">
-                <img src="Images/linkedin.png" alt="LinkedIn icon" />
+                <img src="images/linkedin.png" alt="LinkedIn icon" />
               </a>
               <span class="major">LinkedIn</span>
             </li>
@@ -103,7 +102,7 @@
           </ul>
         </div>
         <div class="image">
-          <img src="Images/Maji_Ndogo_powerBi_Project3.png" alt="Water Infrastructure Dashboard" />
+          <img src="images/Maji_Ndogo_Project3.jpg" alt="Water Infrastructure Dashboard" />
         </div>
       </section>
 
@@ -112,7 +111,7 @@
         <div class="inner">
           <h3>Let’s work together!</h3>
           <p>If you're looking for thoughtful, data-driven decisions — delivered with style — I’m here to help.</p>
-          <a href="mailto:victoria@email.com" class="button">Contact Me</a>
+          <a href="mailto:ngendogithendu@gmail.com" class="button">Contact Me</a>
         </div>
       </footer>
 
@@ -128,4 +127,3 @@
     <script defer src="assets/js/main.js"></script>
   </body>
 </html>
-
