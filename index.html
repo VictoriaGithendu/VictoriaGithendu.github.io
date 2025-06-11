@@ -10,50 +10,64 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
-      /* Fix hero layout */
-      .banner.style1 {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 3em 2em;
-      }
-      .banner.style1 .content {
-        flex: 1;
-        padding-right: 2em;
-      }
-      .banner.style1 .image {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: visible;
-      }
-      .banner.style1 .image img {
-        object-fit: contain;
-        object-position: center;
-        max-height: 70vh;
-        width: auto;
-        height: auto;
-      }
-      h1 {
-        color: #e7c9b9;
-        font-size: 3rem;
-        margin: 0;
-      }
-      .subtitle {
-        font-size: 2rem;
-        color: #3a3a3a;
-        margin-top: 0.5rem;
-        font-weight: 400;
-      }
-      .button {
-        background-color: #d9a5a1;
-        color: white;
-      }
-      .icon-circle img {
-        width: 32px;
-        height: 32px;
-      }
+     <style>
+  /* Fix hero layout */
+  .banner.style1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3em 2em;
+    flex-wrap: wrap;
+  }
+
+  .banner.style1 .content {
+    flex: 1;
+    padding-right: 2em;
+    min-width: 280px;
+  }
+
+  .banner.style1 .image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    min-width: 280px;
+  }
+
+  .banner.style1 .image img {
+    object-fit: contain;
+    object-position: center;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+    border-radius: 1rem; /* Optional soft rounded corners */
+  }
+
+  h1 {
+    color: #e7c9b9;
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+    color: #3a3a3a;
+    margin-top: 0.5rem;
+    font-weight: 400;
+  }
+
+  .button {
+    background-color: #d9a5a1;
+    color: white;
+  }
+
+  .icon-circle img {
+    width: 32px;
+    height: 32px;
+  }
+</style>
+
     </style>
   </head>
   <body class="is-preload">
@@ -88,7 +102,7 @@
           </ul>
         </div>
         <div class="image">
-          <img src="IMG-20231122-WA0023.jpg" alt="Victoria's Profile" />
+          <img src="Images/victoria-profile.jpg" alt="Victoria's Profile" />
         </div>
       </section>
 
