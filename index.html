@@ -1,84 +1,103 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Victoria | Data Analyst</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <style>
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+  <head>
+    <title>Victoria – Data Analyst</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Victoria is a data analyst who transforms raw data into actionable insights with a touch of elegance." />
+    <meta name="author" content="Victoria" />
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+      body {
+        --primary-color: #e7c9b9; /* soft nude blush */
+        --accent-color: #f5e4dd;  /* light beige */
+        --text-color: #3a3a3a;
+        --button-color: #d9a5a1;
+      }
+      h1 span {
+        display: block;
+        color: var(--primary-color);
+      }
+      .button {
+        background-color: var(--button-color);
+        color: white;
+      }
+      .icon-circle img {
+        width: 32px;
+        height: 32px;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <main id="wrapper" class="divided">
 
-    .fade-in {
-      animation: fadeIn 1s ease-out forwards;
-    }
-  </style>
-</head>
-<body class="bg-pink-50 font-sans text-gray-800">
-  <!-- Introduction Section -->
-  <section class="container mx-auto p-6 fade-in">
-    <div class="bg-white rounded-2xl shadow-lg p-6 text-center">
-      <img src="IMG-20231122-WA0023.jpg" alt="Victoria" class="rounded-full mx-auto mb-4 w-40 h-40 shadow-md">
-      <h2 class="text-2xl font-bold text-pink-800">Victoria Githendu</h2>
-      <p class="text-gray-600">Data Analyst</p>
-      <p class="mt-4 text-gray-700">
-        I am a data analyst with skills in SQL, Excel, and Power BI. Passionate about turning raw data into meaningful insights to drive better decision-making. Currently building projects to grow my portfolio and sharpen my storytelling with data.
-      </p>
+      <!-- Hero -->
+      <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="home">
+        <div class="content">
+          <h1><span>VICTORIA</span><span>DATA ANALYST</span></h1>
+          <p class="major">I help organizations transform raw data into meaningful insights for smarter decisions.</p>
+          <p class="major">Blending technical skill with storytelling and a soft touch, I turn complex datasets into actionable insights that drive impact.</p>
+          <ul class="icons">
+            <li>
+              <a href="mailto:victoria@email.com" class="icon-circle">
+                <img src="images/mail.png" alt="Email icon" />
+              </a>
+              <span class="major">Email</span>
+            </li>
+            <li>
+              <a href="https://github.com/victoria" target="_blank" class="icon-circle">
+                <img src="images/github.png" alt="GitHub icon" />
+              </a>
+              <span class="major">GitHub</span>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/victoria" target="_blank" class="icon-circle">
+                <img src="images/linkedin.png" alt="LinkedIn icon" />
+              </a>
+              <span class="major">LinkedIn</span>
+            </li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="images/IMG-20231122-WA0023.jpg" alt="Victoria's Profile" />
+        </div>
+      </section>
 
-      <!-- Social + Resume -->
-      <div class="mt-6 space-y-3">
-        <a href="https://www.linkedin.com/in/victoria-githendu/" class="flex items-center justify-center gap-2 text-pink-700 hover:underline">
-          <i data-lucide="linkedin" class="w-5 h-5"></i> LinkedIn
-        </a>
-        <a href="https://VictoriaGithendu.github.io" class="flex items-center justify-center gap-2 text-pink-700 hover:underline">
-          <i data-lucide="github" class="w-5 h-5"></i> GitHub
-        </a>
-        <a href="mailto:ngendogithendu@gmail.com" class="flex items-center justify-center gap-2 text-pink-700 hover:underline">
-          <i data-lucide="mail" class="w-5 h-5"></i> Email Me
-        </a>
-        <a href="Victoria_Githendu_Resume.pdf" download class="inline-block mt-3 px-4 py-2 bg-pink-600 text-white rounded-full shadow hover:bg-pink-700 transition">
-          Download Resume
-        </a>
-      </div>
-    </div>
-  </section>
+      <!-- Spotlight Project -->
+      <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="water-infrastructure">
+        <div class="content">
+          <h2>Water Infrastructure Analysis Using SQL</h2>
+          <p>I analyzed national water infrastructure data using SQL to identify systemic inefficiencies, high-risk regions, and funding gaps. By filtering facilities by violation history and geographic risk, I developed recommendations for improving compliance and investment prioritization.</p>
+          <ul class="actions stacked">
+            <li><a href="https://github.com/victoria/water-infrastructure-analysis" target="_blank" class="button">View Project on GitHub</a></li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="images/water-dashboard.jpg" alt="Water Infrastructure Dashboard" />
+        </div>
+      </section>
 
-  <!-- Project Section: Water Quality and Infrastructure (Power BI) -->
-  <section class="container mx-auto p-6 fade-in">
-    <h2 class="text-3xl font-bold text-pink-800 mb-6">Water Quality and Infrastructure Analysis</h2>
-    <p class="text-gray-700 mb-4">
-      This Power BI dashboard visualises the currents of change in Maji Ndogo. It explores gender composition of queues at shared water taps, considers new crime-related data, reports insights to decision makers, and tracks progress of projects addressing Maji Ndogo's water crisis.
-    </p>
-    <div class="flex flex-wrap gap-4 mb-6">
-      <img src="Maji_Ndogo_Project_PowerBi_Project1.png" class="rounded-xl shadow-md w-full md:w-1/3" />
-      <img src="Images/Maji_Ndogo_PowerBi_Project2.png" class="rounded-xl shadow-md w-full md:w-1/3" />
-      <img src="Images/Maji_Ndogo_powerBi_Project3.png" class="rounded-xl shadow-md w-full md:w-1/3" />
-    </div>
-    <a href="https://github.com/VictoriaGithendu/Water-Quality-and-Infrastructure-Analysis" target="_blank" class="inline-block px-4 py-2 bg-pink-600 text-white rounded-full shadow hover:bg-pink-700 transition">
-      View on GitHub
-    </a>
-  </section>
+      <!-- Contact -->
+      <footer class="wrapper style1 align-center">
+        <div class="inner">
+          <h3>Let’s work together!</h3>
+          <p>If you're looking for thoughtful, data-driven decisions — delivered with style — I’m here to help.</p>
+          <a href="mailto:victoria@email.com" class="button">Contact Me</a>
+        </div>
+      </footer>
 
-  <!-- Placeholder Project Section: Water Infrastructure Analysis (SQL) -->
-  <section class="container mx-auto p-6 fade-in">
-    <h2 class="text-3xl font-bold text-pink-800 mb-6">Water Infrastructure Analysis Using SQL</h2>
-    <p class="text-gray-700 mb-4">
-      An exploratory SQL project investigating operational data of municipal water systems. The analysis identifies bottlenecks, service inconsistencies, and optimization opportunities. Results guide strategic decisions on infrastructure improvements and service delivery.
-    </p>
-    <div class="bg-gray-100 rounded-xl h-64 flex items-center justify-center text-gray-400">
-      [SQL Analysis visual or table preview placeholder]
-    </div>
-    <a href="#" class="inline-block mt-4 px-4 py-2 bg-pink-600 text-white rounded-full shadow hover:bg-pink-700 transition">
-      View on GitHub
-    </a>
-  </section>
+    </main>
 
-  <!-- Lucide Icons Init -->
-  <script>
-    lucide.createIcons();
-  </script>
-</body>
+    <!-- Scripts -->
+    <script defer src="assets/js/jquery.min.js"></script>
+    <script defer src="assets/js/jquery.scrollex.min.js"></script>
+    <script defer src="assets/js/jquery.scrolly.min.js"></script>
+    <script defer src="assets/js/browser.min.js"></script>
+    <script defer src="assets/js/breakpoints.min.js"></script>
+    <script defer src="assets/js/util.js"></script>
+    <script defer src="assets/js/main.js"></script>
+  </body>
 </html>
+
