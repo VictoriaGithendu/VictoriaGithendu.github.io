@@ -29,21 +29,26 @@
         height: 32px;
       }
   .banner.style1 {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .banner .image {
-    flex: 0 0 auto;
-  }
+.banner.style1 .content {
+  flex: 1;
+}
 
-  .banner .image img {
-    object-fit: contain !important;
-    margin: 0 auto;
-    max-height: 60vh;
-    width: auto;
-    height: auto;
-  }
+.banner.style1 .image {
+  flex: 0 0 auto;
+  overflow: visible;
+}
+
+.banner.style1 .image img {
+  object-fit: contain !important;
+  max-height: 70vh !important;  /* adjust between 60–80vh as needed */
+  width: auto !important;
+  height: auto !important;
+}
     </style>
   </head>
   <body class="is-preload">
