@@ -9,70 +9,69 @@
     <link rel="icon" href="images/favicon.png" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    
     <style>
-     <style>
-  /* Fix hero layout */
-  .banner.style1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3em 2em;
-    flex-wrap: wrap;
-  }
+      /* Fix hero layout */
+      .banner.style1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3em 2em;
+        flex-wrap: wrap;
+        width: 100%;
+      }
 
-  .banner.style1 .content {
-    flex: 1;
-    padding-right: 2em;
-    min-width: 280px;
-  }
+      .banner.style1 .content {
+        flex: 1;
+        padding-right: 2em;
+        min-width: 280px;
+        width: 100%;
+      }
 
-  .banner.style1 .image {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: visible;
-    min-width: 280px;
-  }
+      .banner.style1 .image {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        min-width: 280px;
+        width: 100%;
+      }
 
-  .banner.style1 .image img {
-    object-fit: contain;
-    object-position: center;
-    max-height: 70vh;
-    width: auto;
-    height: auto;
-    border-radius: 1rem; /* Optional soft rounded corners */
-  }
+      .banner.style1 .image img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        object-position: center;
+        border-radius: 1rem; /* Optional soft rounded corners */
+      }
 
-  h1 {
-    color: #e7c9b9;
-    font-size: 3rem;
-    margin: 0;
-  }
+      h1 {
+        color: #e7c9b9;
+        font-size: 3rem;
+        margin: 0;
+      }
 
-  .subtitle {
-    font-size: 2rem;
-    color: #3a3a3a;
-    margin-top: 0.5rem;
-    font-weight: 400;
-  }
+      .subtitle {
+        font-size: 2rem;
+        color: #3a3a3a;
+        margin-top: 0.5rem;
+        font-weight: 400;
+      }
 
-  .button {
-    background-color: #d9a5a1;
-    color: white;
-  }
+      .button {
+        background-color: #d9a5a1;
+        color: white;
+      }
 
-  .icon-circle img {
-    width: 32px;
-    height: 32px;
-  }
-</style>
-
+      .icon-circle img {
+        width: 32px;
+        height: 32px;
+      }
     </style>
   </head>
   <body class="is-preload">
     <main id="wrapper" class="divided">
-
       <!-- Hero -->
       <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="home">
         <div class="content">
@@ -128,7 +127,6 @@
           <a href="mailto:ngendogithendu@gmail.com" class="button">Contact Me</a>
         </div>
       </footer>
-
     </main>
 
     <!-- Scripts -->
