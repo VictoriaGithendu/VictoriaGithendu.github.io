@@ -34,16 +34,18 @@ window.addEventListener("scroll", () => {
 });
 
 // Back to Top button
-const topBtn = document.getElementById("topBtn");
+document.addEventListener("DOMContentLoaded", () => {
+  const topBtn = document.getElementById("topBtn");
 
-window.addEventListener("scroll", () => {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    topBtn.style.display = "block";
-  } else {
-    topBtn.style.display = "none";
-  }
-});
+  window.addEventListener("scroll", () => {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      topBtn.style.display = "block";
+    } else {
+      topBtn.style.display = "none";
+    }
+  });
 
-topBtn.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  topBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 });
