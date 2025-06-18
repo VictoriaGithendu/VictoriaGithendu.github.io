@@ -163,7 +163,7 @@ section.fade-in {
 
 .skills-section h1 {
     color: #000;
-  font-size: 2.5;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
@@ -184,18 +184,31 @@ section.fade-in {
   font-size: 1rem;
 }
 
+/* Tools part */
 .tool-logos {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
     margin-top: 2rem;
 }
 
-.tool-logos img {
+.tool {
+    text-align: center;
+    font-size: 14px;
+    color: #111;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tool img {
     height: 50px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, filter o.3s ease;
+    margin-bottom: 0.1rem;
+}
+
+.tool:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }
 
 /* Project Image Container Styles */
