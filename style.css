@@ -244,6 +244,11 @@ section.fade-in {
 .project-2 {
     background-color: #5c4033;
 }
+
+.project-3 {
+  background-color: #a0d1ff;
+}
+
 /* Hero Section */
 .banner.style1 {
   display: flex;
